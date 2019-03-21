@@ -1,0 +1,18 @@
+{
+  "name": "softgames",
+  "version": "1.0.0",
+  "description": "SoftUni Project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kalmar98",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "child_process": "^1.0.2",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-exec": "^3.0.2"
+  }
+}

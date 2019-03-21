@@ -1,0 +1,13 @@
+title: SoftGames
+email: kalmar98softuni@gmail.com
+description: School Project
+destination: docs
+# baseurl: "/SoftGames"
+baseurl: ""
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md]
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed

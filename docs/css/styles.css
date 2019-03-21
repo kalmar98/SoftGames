@@ -1,0 +1,26 @@
+@import url('typography.css');
+@import url('navigation.css');
+
+@import url('gallery.css');
+
+@import url('site-header.css');
+@import url('site-footer.css');
+
+:root {
+	--color-main-bgrd: #333;
+	--color-main-text: #FFF;
+	--color-main-link: orange;
+
+	--color-basic-border: #CCC;
+
+	--sizing-basic-border: 1px;
+}
+
+body {
+	background: rgb(145, 56, 56);
+	padding: 2rem 3rem;
+}
+
+.site-content {
+	padding: 2rem 0;	
+}
