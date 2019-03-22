@@ -11,7 +11,7 @@ gulp.task("css", function() {
 	return gulp.src( '_assets/css/**/*.css' )
 		.pipe( autoprefixer() )
 		.pipe( gulp.dest( './docs/css/' ) )
-		.pipe( browserSync.stream({ match: '**/*.css' }) )
+		.pipe( browserSync.stream({ match: '**/*.css' }))
 	;
 });
 
@@ -38,7 +38,7 @@ gulp.task("watch", function() {
 			"./_layouts/*.html",
 			//"./_posts/**/*.*"
 		],
-	).on('change', gulp.series('jekyll', 'css'),);
+	).on('change', gulp.series('jekyll', 'css'));
 
 	gulp.watch( 'docs/**/*.html' ).on('change', browserSync.reload );
 	gulp.watch( 'docs/**/*.js' ).on('change', browserSync.reload );
