@@ -36,6 +36,8 @@ gulp.task("watch", function() {
 			"./*.html",
 			"./_includes/*.html",
 			"./_layouts/*.html",
+			"./_site/*.html",
+			"./views/*.html",
 			//"./_posts/**/*.*"
 		],
 	).on('change', gulp.series('jekyll', 'css'));

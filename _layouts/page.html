@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
-  </head>
-  <body>
 
-    <header class="site-header">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/styles.css">
+</head>
 
-        <h1><a href="/">{{ site.title }}</a></h1>
-        <h2>Maika ti e v nas</h2>
-        {% include navigation.html %}
+<body>
 
-    </header>
-        
-    <main class="site-content">
+  {% include header.html %}
 
-      {{ content }}
-      
-    </main>
+  <main class="content">
 
-    <footer class="site-footer">
+    {{ content }}
 
-      <p>&copy; SoftGames by Koko</p>
+  </main>
 
-      {% include navigation.html %}
+  {% include footer.html %}
 
-    </footer>
+</body>
 
-  </body>
 </html>

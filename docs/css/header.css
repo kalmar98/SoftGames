@@ -1,12 +1,16 @@
 .main-nav {
-    border: solid var(--color-basic-border);
-    border-width: var(--sizing-basic-border) 0;
+    border: solid var(--border-main-color);
+    border-width: var(--border-main-width);
 }
 
 .main-nav ul {
     display: flex;
     padding: 0;
     margin: 0;
+}
+
+.main-nav>ul{
+    justify-content: space-between;
 }
 
 .main-nav li {
@@ -18,5 +22,5 @@
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
-    color: var(--color-main-link);
+    color: var(--link-main-color);
 }

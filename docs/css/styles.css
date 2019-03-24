@@ -1,26 +1,26 @@
+@import url('reset');
+@import url('variables.css');
 @import url('typography.css');
-@import url('navigation.css');
 
 @import url('gallery.css');
 
-@import url('site-header.css');
-@import url('site-footer.css');
+@import url('header.css');
+@import url('footer.css');
 
-:root {
-	--color-main-bgrd: #333;
-	--color-main-text: #FFF;
-	--color-main-link: orange;
-
-	--color-basic-border: #CCC;
-
-	--sizing-basic-border: 1px;
+html{
+	height: 100%;
 }
 
 body {
-	background: rgb(145, 56, 56);
-	padding: 2rem 3rem;
+	margin: 0 1rem;
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	background: var(--background-main-color, black);
+	padding: 0rem 3rem;
+	
 }
 
-.site-content {
+.content {
 	padding: 2rem 0;	
 }

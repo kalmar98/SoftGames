@@ -1,0 +1,20 @@
+:root {
+	--background-main-color: #000000;
+	--text-main-color: #ffffff;
+	--link-main-color: #c90000;
+
+	--border-main-color: #c90000;
+
+	--border-main-width: 0.2em;
+
+	--default-font-size: 12px;
+	--default-line-height: 1.5;
+	--default-font-family: 'Miltonian Tattoo', cursive;
+	--default-whitespace-size: 1.5em;
+	--default-letter-spacing: 0.1em;
+
+	--tablet-font-size: 14px;
+	--laptop-font-size: 16px;
+	--desktop-font-size: 18px;
+	--huge-font-size: 20px;
+}
