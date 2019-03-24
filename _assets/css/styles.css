@@ -12,10 +12,10 @@ html{
 }
 
 body {
-	margin: 0 1rem;
+	margin: 0 8rem;
 	min-height: 100%;
 	display: grid;
-	grid-template-rows: 1fr auto;
+	grid-template-rows: auto 1fr auto;
 	background: var(--background-main-color, black);
 	padding: 0rem 3rem;
 	

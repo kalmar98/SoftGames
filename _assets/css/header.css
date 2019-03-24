@@ -1,6 +1,5 @@
 .main-nav {
-    border: solid var(--border-main-color);
-    border-width: var(--border-main-width);
+    border: var(--border-main-width) solid var(--border-main-color);
 }
 
 .main-nav ul {
@@ -14,13 +13,20 @@
 }
 
 .main-nav li {
-    display: block;
-    list-style: none outside;    
+   
+    list-style: none outside;
+    height: 4rem;
+
 }
 
 .main-nav a {
-    display: block;
-    padding: 0.5em 1em;
+    background: white;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    border: var(--border-main-width) solid var(--border-main-color);
+    border-bottom: none; border-top: none;
+    padding: 0em 2em;
     text-decoration: none;
     color: var(--link-main-color);
 }
