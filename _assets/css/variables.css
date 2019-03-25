@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Miltonian+Tattoo');
+@import url('https://fonts.googleapis.com/css?family=Kranky');
 
 :root {
 	--background-main-color: #000000;
 	--text-main-color: #ffffff;
+
+	--sg-red: #c90000;
+
 	--link-main-color: #c90000;
 
 	--border-main-color: #c90000;
 
-	--border-main-width: 0.2em;
+	--border-main-width: 0.6em;
 
 	--default-font-size: 12px;
 	--default-line-height: 3.5;
-	--default-font-family: 'Miltonian Tattoo', cursive;
+	--default-font-family: 'Kranky', cursive;
 	--default-whitespace-size: 1.5em;
 	--default-letter-spacing: 0.1em;
 

@@ -1,25 +1,17 @@
 <header>
     <nav class="main-nav">
         <ul>
-            <li class="logo">
-                <a href="/">Home</a>
+            {% for page in site.pages reversed %}
+
+            {% if page.url != '/feed.xml' %}
+            <li>
+                <a href="{{ page.url }}">
+                    {{ page.title }}
+                </a>
             </li>
+            {% endif %}
+            {% endfor %}
 
-            <li class="menu">
-                <ul>
-                    {% for page in site.pages %}
-
-                    {% if page.url != '/feed.xml' and page.url != '/' %}
-                    <li>
-                        <a href="{{ page.url }}">
-                            {{ page.title }}
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-
-            </li>
 
         </ul>
     </nav>
