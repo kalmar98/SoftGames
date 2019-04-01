@@ -1,13 +1,33 @@
 @keyframes blur {
     0% {
-        text-shadow: 0px 0px 10px #7e7e7e;
+        text-shadow: 0px 0px 5px #7e7e7e;
     }
-    50% {
-        text-shadow: 1px 1px 20px #ffffff;
+    100% {
+        text-shadow: 0px 1px 20px #ffffff;
+    }
+
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
     }
 
     100% {
-        text-shadow: 0px 0px 10px #7e7e7e;
+        opacity: 0.6;
     }
 }
+
+@keyframes appear {
+    0% {
+        transform: translateY(10vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 

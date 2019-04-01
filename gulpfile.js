@@ -15,6 +15,13 @@ gulp.task("css", function() {
 	;
 });
 
+gulp.task("js", function() {
+	return gulp.src( '_assets/js/**/*.js' )
+		.pipe( gulp.dest( './docs/js/' ) )
+		.pipe( browserSync.stream({ match: '**/*.js' }))
+	;
+});
+
 // Jekyll
 gulp.task("jekyll", function() {
 	return cp.exec("jekyll build");
@@ -31,6 +38,8 @@ gulp.task("watch", function() {
 
 	gulp.watch( '_assets/css/**/*.css', gulp.series('css') );
 
+	gulp.watch( '_assets/js/**/*.js', gulp.series('js') );
+
 	gulp.watch(
 		[
 			"./*.html",
@@ -40,11 +49,11 @@ gulp.task("watch", function() {
 			"./views/*.html",
 			//"./_posts/**/*.*"
 		],
-	).on('change', gulp.series('jekyll', 'css'));
+	).on('change', gulp.series('jekyll', 'css', 'js'));
 
 	gulp.watch( 'docs/**/*.html' ).on('change', browserSync.reload );
 	gulp.watch( 'docs/**/*.js' ).on('change', browserSync.reload );
 
 });
 
-gulp.task("default", gulp.series('css','watch'));
+gulp.task("default", gulp.series('css', 'js', 'watch'));

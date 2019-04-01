@@ -1,0 +1,24 @@
+.about {
+    width: 60%;
+    margin: 2rem auto;
+    text-align: center;
+    border: 1rem double var(--sg-red);
+    border-radius: 1rem;
+    -webkit-animation: appear 1s ease;
+            animation: appear 1s ease;
+}
+
+.about h2{
+    margin: 0;
+    background-color: var(--sg-red);
+    font-size: 3rem;
+    border: 0.5rem double black;
+}
+
+.about p{
+    width: 80%;
+    margin: 1rem auto 1rem;
+    -webkit-animation: flicker 1s ease-in-out infinite alternate;
+            animation: flicker 1s ease-in-out infinite alternate;
+}
+

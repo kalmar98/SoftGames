@@ -28,15 +28,14 @@
     border-top: none;
     text-decoration: none;
     color: var(--text-main-color);
-    -webkit-animation: blur 1s ease-in-out infinite;
-            animation: blur 1s ease-in-out infinite;
     transition: all 0.6s cubic-bezier(0, .01, 0, 1.6);
 }
 
 .main-nav a:hover {
-    color: black;
     height: 120%;
     font-size: 110%;
+    -webkit-animation: blur 1s ease-in-out infinite alternate;
+            animation: blur 1s ease-in-out infinite alternate;
 }
 .main-nav a:hover::before {
 	bottom: auto;

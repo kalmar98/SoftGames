@@ -1,25 +1,69 @@
 @-webkit-keyframes blur {
     0% {
-        text-shadow: 0px 0px 10px #7e7e7e;
+        text-shadow: 0px 0px 5px #7e7e7e;
     }
-    50% {
-        text-shadow: 1px 1px 20px #ffffff;
+    100% {
+        text-shadow: 0px 1px 20px #ffffff;
     }
 
-    100% {
-        text-shadow: 0px 0px 10px #7e7e7e;
-    }
 }
+
 @keyframes blur {
     0% {
-        text-shadow: 0px 0px 10px #7e7e7e;
+        text-shadow: 0px 0px 5px #7e7e7e;
     }
-    50% {
-        text-shadow: 1px 1px 20px #ffffff;
+    100% {
+        text-shadow: 0px 1px 20px #ffffff;
+    }
+
+}
+
+@-webkit-keyframes flicker {
+    0% {
+        opacity: 1;
     }
 
     100% {
-        text-shadow: 0px 0px 10px #7e7e7e;
+        opacity: 0.6;
     }
 }
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}
+
+@-webkit-keyframes appear {
+    0% {
+        -webkit-transform: translateY(10vh);
+                transform: translateY(10vh);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        -webkit-transform: translateY(10vh);
+                transform: translateY(10vh);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 
