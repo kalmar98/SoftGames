@@ -1,0 +1,32 @@
+.contacts {
+    width: 60%;
+    margin: 2rem auto;
+    text-align: center;
+    border: 1rem double var(--sg-red);
+    border-radius: 1rem;
+    animation: appear 1s ease;
+}
+
+.contacts h2{
+    margin: 0;
+    background-color: var(--sg-red);
+    font-size: 3rem;
+    border: 0.5rem double black;
+}
+
+.contacts .fas, .fab{
+    font-size: 10rem;
+    animation: blur 1s ease infinite alternate;
+}
+
+.contacts a:link{
+    color: white;
+}
+
+.contacts a:active{
+    color: white;
+}
+
+.contacts a:visited{
+    color: white;
+}
