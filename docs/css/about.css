@@ -4,8 +4,8 @@
     text-align: center;
     border: 1rem double var(--sg-red);
     border-radius: 1rem;
-    -webkit-animation: appear 1s ease;
-            animation: appear 1s ease;
+    -webkit-animation: var(--appear-anim);
+            animation: var(--appear-anim);
 }
 
 .about h2{
@@ -18,7 +18,7 @@
 .about p{
     width: 80%;
     margin: 1rem auto 1rem;
-    -webkit-animation: flicker 1s ease-in-out infinite alternate;
-            animation: flicker 1s ease-in-out infinite alternate;
+    -webkit-animation: flicker-weak 1s ease-in-out infinite alternate;
+            animation: flicker-weak 1s ease-in-out infinite alternate;
 }
 

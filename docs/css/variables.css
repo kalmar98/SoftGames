@@ -22,4 +22,6 @@
 	--laptop-font-size: 16px;
 	--desktop-font-size: 18px;
 	--huge-font-size: 20px;
+
+	--appear-anim: appear 0.5s ease;
 }

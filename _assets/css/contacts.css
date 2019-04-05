@@ -4,7 +4,7 @@
     text-align: center;
     border: 1rem double var(--sg-red);
     border-radius: 1rem;
-    animation: appear 1s ease;
+    animation: var(--appear-anim);
 }
 
 .contacts h2{
@@ -14,9 +14,12 @@
     border: 0.5rem double black;
 }
 
-.contacts .fas, .fab{
+.contacts .fas, .contacts .fab{
     font-size: 10rem;
-    animation: blur 1s ease infinite alternate;
+}
+
+.contacts .fas:hover, .contacts .fab:hover{
+    animation: blur 0.1s ease-in infinite alternate;
 }
 
 .contacts a:link{

@@ -22,6 +22,13 @@ gulp.task("js", function() {
 	;
 });
 
+gulp.task("img", function() {
+	return gulp.src( '_assets/img/**/*.jpg' )
+		.pipe( gulp.dest( './docs/img/' ) )
+		.pipe( browserSync.stream({ match: '**/*.jpg' }))
+	;
+});
+
 // Jekyll
 gulp.task("jekyll", function() {
 	return cp.exec("jekyll build");
@@ -40,6 +47,8 @@ gulp.task("watch", function() {
 
 	gulp.watch( '_assets/js/**/*.js', gulp.series('js') );
 
+	gulp.watch( '_assets/img/**/*.jpg', gulp.series('img') );
+
 	gulp.watch(
 		[
 			"./*.html",
@@ -49,11 +58,12 @@ gulp.task("watch", function() {
 			"./views/*.html",
 			//"./_posts/**/*.*"
 		],
-	).on('change', gulp.series('jekyll', 'css', 'js'));
+	).on('change', gulp.series('jekyll', 'css', 'js', 'img'));
 
 	gulp.watch( 'docs/**/*.html' ).on('change', browserSync.reload );
 	gulp.watch( 'docs/**/*.js' ).on('change', browserSync.reload );
+	gulp.watch( 'docs/**/*.jpg' ).on('change', browserSync.reload );
 
 });
 
-gulp.task("default", gulp.series('css', 'js', 'watch'));
+gulp.task("default", gulp.series('jekyll', 'css', 'js', 'img', 'watch'));
