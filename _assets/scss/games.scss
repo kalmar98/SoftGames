@@ -1,62 +1,71 @@
 .games {
+    display: grid;
+    grid-template-rows: 4.7rem auto;
     width: 70%;
+    height: 80%;
     margin: 2rem auto;
     text-align: center;
     border: 1rem double var(--sg-red);
     border-radius: 1rem;
     animation: var(--appear-anim);
-}
+    
 
-.games>h2{
-    margin: 0;
-    background-color: var(--sg-red);
-    font-size: 3rem;
-    border: 0.5rem double black;
-}
+    &>h2 {
+        margin: 0;
+        background-color: var(--sg-red);
+        font-size: 3rem;
+        border: 0.5rem double black;
+    }
 
-.games .mySlides{
-    display: none;
-    height: 350px;
-    width: 100%;
-}
+    &>#gamesContainer {
+        background-image: url("/img/games/1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        
+    }
 
-.games>.btn-container{
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    left: 50%;
-    width: 70%;
-    height: 30%;
-    margin-left: -35%;
-    top: 50%;
-    animation: appear 5s ease;
-}
+    button {
+        border: none;
+        background: transparent;
+        outline: none;
+        font-family: inherit;
+        opacity: 0.2;
+        color: var(--sg-red);
+        font-size: 3rem;
 
-.games>.btn-container>button{
-    border: none;
-    background: transparent;
-    outline: none;
-    font-family: inherit;
-    opacity: 0.2;
-    color: var(--sg-red);
-    font-size: 3rem;
-}
+        :hover{
+            animation: flicker-weak 0.1s ease infinite alternate-reverse;
+            
+        }
 
-.games>.btn-container>button:hover{
-    animation: flicker-weak 0.1s ease infinite alternate-reverse;
+        &:nth-of-type(1){
+            grid-row-start: 2;
+            grid-column-start: 1;
+        }
+
+        &:nth-of-type(2){
+            grid-row-start: 2;
+            grid-column-start: 3;
+        }
+
+        &:nth-of-type(3){
+            grid-row-start: 3;
+            grid-column-start: 2;
+        }
+
+        &:nth-of-type(3):hover{
+            animation: flicker-weak 0.1s ease infinite alternate-reverse;
+        }
+        
+    }
+
     
 }
 
-.games>.btn-container>button:nth-of-type(1){
-    grid-column-start: 1;
-}
 
-.games>.btn-container>button:nth-of-type(2){
-    grid-column-start: 3;
-}
 
-.games>.btn-container>button:nth-of-type(3){
-    grid-column-start: 2;
-}
+
 

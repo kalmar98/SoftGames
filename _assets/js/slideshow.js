@@ -1,19 +1,33 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+let slideIndex = 1;
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+const maxGamesNumber = 2; //reflection could be a far better choice, but I am aiming for simplicity
+
+function addSlide(n) {
+
+    slideIndex += n
+    this.showSlide();
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
+function showSlide() {
+
+    let path = $('#gamesContainer');
+
+    this.validateSlide();
+
+    let bgImage = path.css('background-image', `url(/img/games/${slideIndex}.jpg)`);
+
+}
+
+function validateSlide() {
+    if (slideIndex > maxGamesNumber) {
+        slideIndex = 1;
+    }
+    else if (slideIndex < 1) {
+        slideIndex = maxGamesNumber;
+    }
 }
 
 
+
+
+//bgImage = `url("/img/${slideIndex}.jpg")`
