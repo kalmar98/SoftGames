@@ -1,37 +1,31 @@
 /* Typography */
-
 html {
-	font: var(--base-font-size);
-	font-family: var(--default-font-family);
-	letter-spacing: var(--default-letter-spacing);
-	color: var(--text-main-color);
-}
+  font: var(--base-font-size);
+  font-family: var(--default-font-family);
+  letter-spacing: var(--default-letter-spacing);
+  color: var(--text-main-color); }
 
 @media (min-width: 600px) {
-	html { font-size: var(--tablet-font-size); }
-}
+  html {
+    font-size: var(--tablet-font-size); } }
 
 @media (min-width: 1260px) {
-	html { font-size: var(--laptop-font-size); }
-}
+  html {
+    font-size: var(--laptop-font-size); } }
 
 @media (min-width: 1420px) {
-	html { font-size: var(--desktop-font-size); }
-}
+  html {
+    font-size: var(--desktop-font-size); } }
 
 @media (min-width: 1660px) {
-	html { font-size: var(--huge-font-size); }
-}
-
+  html {
+    font-size: var(--huge-font-size); } }
 
 p, ul, ol, dl, table {
-	margin-bottom: var(--default-whitespace-size);
-}
+  margin-bottom: var(--default-whitespace-size); }
 
 ul, ol {
-	padding-left: var(--default-whitespace-size);
-}
+  padding-left: var(--default-whitespace-size); }
 
 h1, h2, h3 {
-	margin: 0 0 calc( var(--default-whitespace-size) / 3 ) 0;
-}
+  margin: 0 0 calc( var(--default-whitespace-size) / 3) 0; }

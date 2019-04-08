@@ -1,10 +1,5 @@
 .content {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    font-size: 3rem;
-}
-
-.content h2 {
-    
-}
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem; }

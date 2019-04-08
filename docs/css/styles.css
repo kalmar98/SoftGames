@@ -1,29 +1,20 @@
-@import url('reset');
-@import url('variables.css');
-@import url('typography.css');
-@import url('animations.css');
-
-@import url('gallery.css');
-
-@import url('header.css');
-@import url('footer.css');
-
-html{
-	height: 100%;
-}
+@import url("reset");
+@import url("variables.css");
+@import url("typography.css");
+@import url("animations.css");
+@import url("gallery.css");
+@import url("header.css");
+@import url("footer.css");
+html {
+  height: 100%; }
 
 body {
-	margin: 0 8rem;
-	min-height: 100%;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	background: var(--background-main-color, black);
-	padding: 0rem 3rem;
-	
-}
+  margin: 0 8rem;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: var(--background-main-color, black);
+  padding: 0rem 3rem; }
 
 .content {
-	padding: 2rem 0;	
-}
-
-
+  padding: 2rem 0; }

@@ -1,59 +1,48 @@
-.main-nav {
-    
-}
-
 .main-nav ul {
-    font-size: 1.5em;
-    display: grid;
-    padding: 0;
-    margin: 0;
-    grid-template-columns: repeat(4, 1fr);
-}
+  font-size: 1.5em;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: repeat(4, 1fr); }
 
 .main-nav li {
-    list-style: none outside;
-    height: 4rem;
-}
+  list-style: none outside;
+  height: 4rem; }
 
 .main-nav a {
-    position: relative;
-    text-transform: uppercase;
-    text-align: center;
-    display: grid;
-    align-items: center;
-    height: 100%;
-    border: var(--border-main-width) double var(--border-main-color);
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
-    border-top: none;
-    text-decoration: none;
-    color: var(--text-main-color);
-    transition: all 0.6s cubic-bezier(0, .01, 0, 1.6);
-}
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  height: 100%;
+  border: var(--border-main-width) double var(--border-main-color);
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-top: none;
+  text-decoration: none;
+  color: var(--text-main-color);
+  transition: all 0.6s cubic-bezier(0, 0.01, 0, 1.6); }
 
 .main-nav a:hover {
-    height: 120%;
-    font-size: 110%;
-    -webkit-animation: blur 1s ease-in-out infinite alternate;
-            animation: blur 1s ease-in-out infinite alternate;
-}
-.main-nav a:hover::before {
-	bottom: auto;
-    height: 100%;
-    top: 0;
-}
-.main-nav a::before {
-    position: absolute;
-    top: 0px;
-	left: -1px;
-	bottom: 0px;
-	height: 0px;
-    width: 101%;
-    
-	z-index: -1;
-	content: '';
-	background: var(--sg-red);
-    transition: all 0.4s linear;
-    
-}
+  height: 120%;
+  font-size: 110%;
+  -webkit-animation: blur 1s ease-in-out infinite alternate;
+          animation: blur 1s ease-in-out infinite alternate; }
 
+.main-nav a:hover::before {
+  bottom: auto;
+  height: 100%;
+  top: 0; }
+
+.main-nav a::before {
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  bottom: 0px;
+  height: 0px;
+  width: 101%;
+  z-index: -1;
+  content: '';
+  background: var(--sg-red);
+  transition: all 0.4s linear; }

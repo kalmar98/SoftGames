@@ -1,18 +1,15 @@
-body>footer {
-    border-top: var(--sizing-basic-border) solid var(--color-basic-border);
-    text-align: center;
-}
+body > footer {
+  border-top: var(--sizing-basic-border) solid var(--color-basic-border);
+  text-align: center; }
 
-body>footer p {
-    text-transform: uppercase;
-    font-style: italic;
-    transition: all 0.1s ease;
-    opacity: 0.3;
-}
+body > footer p {
+  text-transform: uppercase;
+  font-style: italic;
+  transition: all 0.1s ease;
+  opacity: 0.3; }
 
-body>footer p:hover {
-    font-style: normal;
-    font-weight: bold;
-    cursor: none;
-    opacity: 0.8;
-}
+body > footer p:hover {
+  font-style: normal;
+  font-weight: bold;
+  cursor: none;
+  opacity: 0.8; }
