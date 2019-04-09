@@ -60,6 +60,7 @@ gulp.task("watch", function () {
 			"./_layouts/*.html",
 			"./_site/*.html",
 			"./views/*.html",
+			"./views/games/*.html",
 			//"./_posts/**/*.*"
 		],
 	).on('change', gulp.series('jekyll', 'scss', 'js', 'img'));

@@ -33,4 +33,6 @@ function getRandomChars(howMany) {
     return result
 }
 
-animate();
+if(container != undefined){
+    animate();
+}

@@ -1,12 +1,10 @@
-@import url('reset');
-@import url('variables.css');
-@import url('typography.css');
-@import url('animations.css');
+@import 'reset';
+@import 'variables';
+@import 'typography';
+@import 'animations';
 
-@import url('gallery.css');
-
-@import url('header.css');
-@import url('footer.css');
+@import 'header';
+@import 'footer';
 
 html{
 	height: 100%;
