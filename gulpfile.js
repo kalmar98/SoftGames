@@ -35,8 +35,12 @@ gulp.task("img", function () {
 
 // Jekyll
 gulp.task("jekyll", function () {
-	return cp.exec("jekyll build");
-	//return cp.spawn("bundle", ["jekyll", "build"], { stdio: "inherit" });
+	try {
+		return cp.exec("jekyll build");
+	} catch (error) {
+		return error;
+	}
+	
 });
 
 gulp.task("watch", function () {
@@ -53,6 +57,7 @@ gulp.task("watch", function () {
 
 	gulp.watch('_assets/img/**/*.jpg', gulp.series('img'));
 
+
 	gulp.watch(
 		[
 			"./*.html",
@@ -60,10 +65,13 @@ gulp.task("watch", function () {
 			"./_layouts/*.html",
 			"./_site/*.html",
 			"./views/*.html",
-			"./views/games/*.html",
-			//"./_posts/**/*.*"
+			"./views/games/*.html"
 		],
-	).on('change', gulp.series('jekyll', 'scss', 'js', 'img'));
+		{ 
+			events: "change", delay: 500 
+		},
+		gulp.series('jekyll', 'scss', 'js', 'img'));
+
 
 	gulp.watch('docs/**/*.html').on('change', browserSync.reload);
 	gulp.watch('docs/**/*.js').on('change', browserSync.reload);
