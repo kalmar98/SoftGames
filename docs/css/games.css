@@ -53,11 +53,11 @@
   overflow: auto;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4); }
-  .modal .modal-content {
+  .modal-content {
     background-color: #464646;
-    margin: 15% auto;
+    margin: 2rem auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 0.5rem ridge #888;
     width: 80%; }
 
 .close {
@@ -71,3 +71,7 @@
     color: #525252;
     text-decoration: none;
     cursor: pointer; }
+
+canvas {
+  width: 100%;
+  height: auto; }

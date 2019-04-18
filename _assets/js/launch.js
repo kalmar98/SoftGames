@@ -4,7 +4,7 @@ let content = $(".modal-content");
 
 $("#launch").click(function () {
 
-    $.get(`/views/games/${slideIndex}.html`, function(data){
+    $.get(`/views/games/${slideIndex}.html`, function (data) {
         content.append(data);
     });
 
@@ -12,12 +12,11 @@ $("#launch").click(function () {
 
 });
 
-$(".close").click(function () {
+$(".close").click(close);
 
+function close(){
     content.children().detach();
-
     modal.css("display", "none");
-
-});
+}
 
 
