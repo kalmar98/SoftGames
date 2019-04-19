@@ -1,31 +1,32 @@
 /* Typography */
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 html {
-  font: var(--base-font-size);
-  font-family: var(--default-font-family);
-  letter-spacing: var(--default-letter-spacing);
-  color: var(--text-main-color); }
+  font-size: 12px;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 0.1em;
+  color: #ffffff; }
 
 @media (min-width: 600px) {
   html {
-    font-size: var(--tablet-font-size); } }
+    font-size: 14px; } }
 
 @media (min-width: 1260px) {
   html {
-    font-size: var(--laptop-font-size); } }
+    font-size: 16px; } }
 
 @media (min-width: 1420px) {
   html {
-    font-size: var(--desktop-font-size); } }
+    font-size: 18px; } }
 
 @media (min-width: 1660px) {
   html {
-    font-size: var(--huge-font-size); } }
+    font-size: 20px; } }
 
 p, ul, ol, dl, table {
-  margin-bottom: var(--default-whitespace-size); }
+  margin-bottom: 1.5em; }
 
 ul, ol {
-  padding-left: var(--default-whitespace-size); }
+  padding-left: 1.5em; }
 
 h1, h2, h3 {
-  margin: 0 0 calc( var(--default-whitespace-size) / 3) 0; }
+  margin: 0 0 0.5em 0; }

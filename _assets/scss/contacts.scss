@@ -1,35 +1,47 @@
+@import 'variables';
+
 .contacts {
     width: 60%;
     margin: 2rem auto;
     text-align: center;
-    border: 1rem double var(--sg-red);
+    border: 1rem double $sgRed;
     border-radius: 1rem;
-    animation: var(--appear-anim);
+    animation: $appearAnim;
+
+    h2{
+        margin: 0;
+        background-color: $sgRed;
+        font-size: 3rem;
+        border: 0.5rem double black;
+    }
+
+    .fas, .fab{
+        font-size: 10rem;
+
+        &:hover, &:hover{
+            animation: blur 0.1s ease-in infinite alternate;
+        }
+    }
+
+    
+    a{
+        &:link{
+            color: white;
+        }
+        
+        &:active{
+            color: white;
+        }
+        
+        &:visited{
+            color: white;
+        }
+    }
+    
 }
 
-.contacts h2{
-    margin: 0;
-    background-color: var(--sg-red);
-    font-size: 3rem;
-    border: 0.5rem double black;
-}
 
-.contacts .fas, .contacts .fab{
-    font-size: 10rem;
-}
 
-.contacts .fas:hover, .contacts .fab:hover{
-    animation: blur 0.1s ease-in infinite alternate;
-}
 
-.contacts a:link{
-    color: white;
-}
 
-.contacts a:active{
-    color: white;
-}
 
-.contacts a:visited{
-    color: white;
-}

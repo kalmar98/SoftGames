@@ -8,20 +8,24 @@
 
 html{
 	height: 100%;
-}
 
-body {
-	margin: 0 8rem;
-	min-height: 100%;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	background: var(--background-main-color, black);
-	padding: 0rem 3rem;
+	body {
+		margin: 0 8rem;
+		min-height: 100%;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		background: $bgMainColor;
+		padding: 0rem 3rem;
 	
+		.content {
+			padding: 2rem 0;	
+		}
+		
+	}
 }
 
-.content {
-	padding: 2rem 0;	
-}
+
+
+
 
 

@@ -1,3 +1,5 @@
+@import 'variables';
+
 .games {
     display: grid;
     grid-template-rows: 4.7rem auto;
@@ -5,14 +7,14 @@
     height: 80%;
     margin: 2rem auto;
     text-align: center;
-    border: 1rem double var(--sg-red);
+    border: 1rem double $sgRed;
     border-radius: 1rem;
-    animation: var(--appear-anim);
+    animation: $appearAnim;
     
 
     &>h2 {
         margin: 0;
-        background-color: var(--sg-red);
+        background-color: $sgRed;
         font-size: 3rem;
         border: 0.5rem double black;
     }
@@ -33,10 +35,10 @@
         outline: none;
         font-family: inherit;
         opacity: 0.2;
-        color: var(--sg-red);
+        color: $sgRed;
         font-size: 3rem;
 
-        :hover, &:nth-of-type(3):hover{
+        &:hover, &:nth-of-type(3):hover{
             animation: flicker-weak 0.1s ease infinite alternate-reverse;
             cursor: pointer;
         }

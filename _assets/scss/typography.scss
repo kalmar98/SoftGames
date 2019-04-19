@@ -1,37 +1,39 @@
 /* Typography */
 
+@import 'variables';
+
 html {
-	font: var(--base-font-size);
-	font-family: var(--default-font-family);
-	letter-spacing: var(--default-letter-spacing);
-	color: var(--text-main-color);
+	font-size: $defaultFontSize;
+	font-family: $defaultFontFamily;
+	letter-spacing: $defaultLetterSpacing;
+	color: $textMainColor;
 }
 
 @media (min-width: 600px) {
-	html { font-size: var(--tablet-font-size); }
+	html { font-size: $tabletFontSize; }
 }
 
 @media (min-width: 1260px) {
-	html { font-size: var(--laptop-font-size); }
+	html { font-size: $laptopFontSize;}
 }
 
 @media (min-width: 1420px) {
-	html { font-size: var(--desktop-font-size); }
+	html { font-size: $desktopFontSize; }
 }
 
 @media (min-width: 1660px) {
-	html { font-size: var(--huge-font-size); }
+	html { font-size: $hugeFontSize; }
 }
 
 
 p, ul, ol, dl, table {
-	margin-bottom: var(--default-whitespace-size);
+	margin-bottom: $defaultWhitespaceSize;
 }
 
 ul, ol {
-	padding-left: var(--default-whitespace-size);
+	padding-left:  $defaultWhitespaceSize;
 }
 
 h1, h2, h3 {
-	margin: 0 0 calc( var(--default-whitespace-size) / 3 ) 0;
+	margin: 0 0 $defaultWhitespaceSize / 3 0;
 }

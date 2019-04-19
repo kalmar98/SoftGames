@@ -1,20 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 .about {
-  width: 60%;
+  width: 70%;
   margin: 2rem auto;
   text-align: center;
-  border: 1rem double var(--sg-red);
+  border: 1rem double #c90000;
   border-radius: 1rem;
-  -webkit-animation: var(--appear-anim);
-          animation: var(--appear-anim); }
-
-.about h2 {
-  margin: 0;
-  background-color: var(--sg-red);
-  font-size: 3rem;
-  border: 0.5rem double black; }
-
-.about p {
-  width: 80%;
-  margin: 1rem auto 1rem;
-  -webkit-animation: flicker-weak 1s ease-in-out infinite alternate;
-          animation: flicker-weak 1s ease-in-out infinite alternate; }
+  -webkit-animation: appear 0.5s ease;
+          animation: appear 0.5s ease; }
+  .about h2 {
+    margin: 0;
+    background-color: #c90000;
+    font-size: 3rem;
+    border: 0.5rem double black; }
+  .about article {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .about article img {
+      width: 100%;
+      height: auto;
+      border: 0.5rem ridge #c90000; }
+    .about article p {
+      width: 60%;
+      margin: auto auto;
+      -webkit-animation: flicker-weak 1s ease-in-out infinite alternate;
+              animation: flicker-weak 1s ease-in-out infinite alternate; }

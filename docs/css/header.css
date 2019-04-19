@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 .main-nav ul {
   font-size: 1.5em;
   display: grid;
@@ -16,12 +17,12 @@
   display: grid;
   align-items: center;
   height: 100%;
-  border: var(--border-main-width) double var(--border-main-color);
+  border: 0.6em double #c90000;
   border-bottom-right-radius: 10%;
   border-bottom-left-radius: 10%;
   border-top: none;
   text-decoration: none;
-  color: var(--text-main-color);
+  color: #ffffff;
   transition: all 0.6s cubic-bezier(0, 0.01, 0, 1.6); }
 
 .main-nav a:hover {
@@ -44,5 +45,5 @@
   width: 101%;
   z-index: -1;
   content: '';
-  background: var(--sg-red);
+  background: #c90000;
   transition: all 0.4s linear; }
