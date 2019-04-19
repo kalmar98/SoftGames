@@ -27,7 +27,7 @@ function play() {
     let brickRowCount = 2;
     let brickColumnCount = 10;
     let brickPadding = 50;
-    console.log(brickPadding);
+    
     let brickWidth = canvas.width / brickColumnCount - brickPadding;
     let brickHeight = brickWidth / 2;
 
@@ -106,7 +106,7 @@ function play() {
     function drawBall() {
         context.beginPath();
         context.arc(x, y, ballRadius, 0, Math.PI * 2);
-        context.fillStyle = "#0095DD";
+        context.fillStyle = "#c90000";
         context.fill();
         context.closePath();
     }
@@ -114,7 +114,7 @@ function play() {
     function drawPaddle() {
         context.beginPath();
         context.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-        context.fillStyle = "#ffffff";
+        context.fillStyle = "#000000";
         context.fill();
         context.closePath();
     }
@@ -132,9 +132,8 @@ function play() {
                     context.rect(brickX, brickY, brickWidth, brickHeight);
                     var gradient = context.createLinearGradient(0, 0, canvas.width, r * brickHeight);
 
-                    gradient.addColorStop(0, 'blue');
-                    gradient.addColorStop(.5, 'cyan');
-                    gradient.addColorStop(1, 'black');
+                    gradient.addColorStop(0, '#c90000');
+                    gradient.addColorStop(1, '#000000');
 
 
                     context.fillStyle = gradient;
@@ -149,7 +148,8 @@ function play() {
     function drawScore() {
         context.font = "2rem 'Luckiest Guy', cursive"
         context.fillStyle = "#000000";
-        context.fillText("Score: " + score, canvas.width / 2.3, canvas.height / 2);
+        context.textAlign = "center";
+        context.fillText("Score: " + score, (canvas.width / 2), canvas.height / 2);
     }
 
     function collisionDetection() {
