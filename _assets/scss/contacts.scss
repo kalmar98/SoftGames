@@ -1,7 +1,7 @@
 @import 'variables';
 
 .contacts {
-    width: 60%;
+    width: 50%;
     margin: 2rem auto;
     text-align: center;
     border: 1rem double $sgRed;
@@ -15,11 +15,29 @@
         border: 0.5rem double black;
     }
 
+    p{
+        margin: 1rem auto 1rem;
+        animation: summon-shadow 0.1s 2s 2 both;
+    }
+
+    
+    
+}
+
+.media{
+    width: 20%;
+    margin: 2rem auto;
+    text-align: center;
+    animation: $appearAnim;
+    
+
     .fas, .fab{
-        font-size: 10rem;
+        font-size: 5rem;
+        animation: summon-shadow 0.1s 1s 2 both;
 
         &:hover, &:hover{
             animation: blur 0.1s ease-in infinite alternate;
+            
         }
     }
 
@@ -37,7 +55,6 @@
             color: white;
         }
     }
-    
 }
 
 

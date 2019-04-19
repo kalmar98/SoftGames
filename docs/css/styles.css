@@ -20,19 +20,19 @@ html {
 
 @media (min-width: 600px) {
   html {
-    font-size: 14px; } }
+    font-size: 16px; } }
 
 @media (min-width: 1260px) {
   html {
-    font-size: 16px; } }
+    font-size: 18px; } }
 
 @media (min-width: 1420px) {
   html {
-    font-size: 18px; } }
+    font-size: 20px; } }
 
 @media (min-width: 1660px) {
   html {
-    font-size: 20px; } }
+    font-size: 22px; } }
 
 p, ul, ol, dl, table {
   margin-bottom: 1.5em; }
@@ -98,6 +98,50 @@ h1, h2, h3 {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 1; } }
+
+@-webkit-keyframes summon-shadow {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    text-shadow: 0rem 0rem 1px #8b8b8b; }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    text-shadow: 0.2rem 0.2rem 1px #585858; } }
+
+@keyframes summon-shadow {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    text-shadow: 0rem 0rem 1px #8b8b8b; }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    text-shadow: 0.2rem 0.2rem 1px #585858; } }
 
 .main-nav ul {
   font-size: 1.5em;

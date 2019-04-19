@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 .about {
-  width: 70%;
+  width: 60%;
   margin: 2rem auto;
   text-align: center;
   border: 1rem double #c90000;
@@ -20,7 +20,7 @@
       height: auto;
       border: 0.5rem ridge #c90000; }
     .about article p {
-      width: 60%;
+      width: 80%;
       margin: auto auto;
-      -webkit-animation: flicker-weak 1s ease-in-out infinite alternate;
-              animation: flicker-weak 1s ease-in-out infinite alternate; }
+      -webkit-animation: summon-shadow 0.1s 2s 2 both;
+              animation: summon-shadow 0.1s 2s 2 both; }

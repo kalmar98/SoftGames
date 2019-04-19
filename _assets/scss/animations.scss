@@ -45,4 +45,27 @@
     }
 }
 
+@keyframes summon-shadow{
+    0% {
+        transform: translate(0);
+        text-shadow: 0rem 0rem 1px #8b8b8b;
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+        text-shadow: 0.2rem 0.2rem 1px #585858;
+    }
+}
+
 

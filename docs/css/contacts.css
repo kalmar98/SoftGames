@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 .contacts {
-  width: 60%;
+  width: 50%;
   margin: 2rem auto;
   text-align: center;
   border: 1rem double #c90000;
@@ -12,14 +12,27 @@
     background-color: #c90000;
     font-size: 3rem;
     border: 0.5rem double black; }
-  .contacts .fas, .contacts .fab {
-    font-size: 10rem; }
-    .contacts .fas:hover, .contacts .fas:hover, .contacts .fab:hover, .contacts .fab:hover {
+  .contacts p {
+    margin: 1rem auto 1rem;
+    -webkit-animation: summon-shadow 0.1s 2s 2 both;
+            animation: summon-shadow 0.1s 2s 2 both; }
+
+.media {
+  width: 20%;
+  margin: 2rem auto;
+  text-align: center;
+  -webkit-animation: appear 0.5s ease;
+          animation: appear 0.5s ease; }
+  .media .fas, .media .fab {
+    font-size: 5rem;
+    -webkit-animation: summon-shadow 0.1s 1s 2 both;
+            animation: summon-shadow 0.1s 1s 2 both; }
+    .media .fas:hover, .media .fas:hover, .media .fab:hover, .media .fab:hover {
       -webkit-animation: blur 0.1s ease-in infinite alternate;
               animation: blur 0.1s ease-in infinite alternate; }
-  .contacts a:link {
+  .media a:link {
     color: white; }
-  .contacts a:active {
+  .media a:active {
     color: white; }
-  .contacts a:visited {
+  .media a:visited {
     color: white; }

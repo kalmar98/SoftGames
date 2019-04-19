@@ -3,3 +3,7 @@
   align-items: center;
   text-align: center;
   font-size: 3rem; }
+
+.index-heading {
+  -webkit-animation: summon-shadow 0.1s 1s 2 both;
+          animation: summon-shadow 0.1s 1s 2 both; }

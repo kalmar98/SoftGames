@@ -8,19 +8,19 @@ html {
 
 @media (min-width: 600px) {
   html {
-    font-size: 14px; } }
+    font-size: 16px; } }
 
 @media (min-width: 1260px) {
   html {
-    font-size: 16px; } }
+    font-size: 18px; } }
 
 @media (min-width: 1420px) {
   html {
-    font-size: 18px; } }
+    font-size: 20px; } }
 
 @media (min-width: 1660px) {
   html {
-    font-size: 20px; } }
+    font-size: 22px; } }
 
 p, ul, ol, dl, table {
   margin-bottom: 1.5em; }
