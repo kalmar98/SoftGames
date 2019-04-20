@@ -4,7 +4,7 @@ let content = $(".modal-content");
 
 $("#launch").click(function () {
 
-    $.get(`/SoftGames/img/games/${slideIndex}.html`, function (data) {
+    $.get(`/SoftGames/views/games/${slideIndex}.html`, function (data) {
         content.append(data);
     });
 
