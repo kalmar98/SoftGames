@@ -25,7 +25,7 @@ function play() {
     let brickWidth = canvas.width / brickColumnCount;
     let brickHeight = canvas.height / brickRowCount;
     let dxBrick = 0;
-    let brickSpeed = canvas.height /100;
+    let brickSpeed = canvas.height /120;
 
     let isGameOver = false;
 
@@ -33,6 +33,60 @@ function play() {
 
     document.addEventListener("keydown", keyDownHandler, false);
     document.addEventListener("keyup", keyUpHandler, false);
+
+    document.addEventListener('touchstart', handleTouchStart, false);
+    document.addEventListener('touchmove', handleTouchMove, false);
+    document.addEventListener('touchend', handleTouchEnd, false);
+
+    let xDown = null;
+    let yDown = null;
+
+    function getTouches(e) {
+        return e.touches ||          // browser API
+            e.originalEvent.touches; // jQuery
+    }
+
+    function handleTouchStart(e) {
+        const firstTouch = getTouches(e)[0];
+        xDown = firstTouch.clientX;
+        yDown = firstTouch.clientY;
+    };
+
+    function handleTouchMove(e) {
+        if (!xDown || !yDown) {
+            return;
+        }
+
+        var xUp = e.touches[0].clientX;
+        var yUp = e.touches[0].clientY;
+
+        var xDiff = xDown - xUp;
+        var yDiff = yDown - yUp;
+
+        if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
+            if (xDiff > 0) {
+                /* left swipe */
+            } else {
+                /* right swipe */
+            }
+        } else {
+            if (yDiff > 0) {
+                /* up swipe */
+                isUpPressed = true;
+            } else {
+                /* down swipe */
+                isDownPressed = true;
+            }
+        }
+        /* reset values */
+        xDown = null;
+        yDown = null;
+    };
+
+    function handleTouchEnd(e){
+        isUpPressed = false;
+        isDownPressed = false;
+    }
 
     function keyDownHandler(e) {
 
