@@ -43,6 +43,7 @@ function play() {
 
     document.addEventListener('touchstart', handleTouchStart, false);
     document.addEventListener('touchmove', handleTouchMove, false);
+    document.addEventListener('touchend', handleTouchEnd, false);
 
     let xDown = null;
     let yDown = null;
@@ -56,8 +57,6 @@ function play() {
         const firstTouch = getTouches(e)[0];
         xDown = firstTouch.clientX;
         yDown = firstTouch.clientY;
-        isLeftPressed = false;
-        isRightPressed = false;
     };
 
     function handleTouchMove(e) {
@@ -90,6 +89,11 @@ function play() {
         xDown = null;
         yDown = null;
     };
+
+    function handleTouchEnd(e){
+        isLeftPressed = false;
+        isRightPressed = false;
+    }
 
     function keyDownHandler(e) {
         if (e.key == "d" || e.key == "ArrowRight") {
