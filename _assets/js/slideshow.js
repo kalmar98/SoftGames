@@ -14,7 +14,7 @@ function showSlide() {
 
     this.validateSlide();
 
-    let bgImage = path.css('background-image', `url(/img/games/${slideIndex}.jpg)`);
+    let bgImage = path.css('background-image', `url(/SoftGames/img/games/${slideIndex}.jpg)`);
 
 }
 
