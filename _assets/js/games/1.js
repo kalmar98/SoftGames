@@ -8,10 +8,10 @@ function play() {
     canvas.height = window.innerHeight;
 
     let x = getRandomInteger(20, canvas.width - 20);
-    let y = canvas.height / 2;
+    let y = canvas.height / 2 + canvas.height / 5;
 
-    let ballRadius = 10;
-    let ballSpeed = 10;
+    let ballRadius = 15;
+    let ballSpeed = canvas.height / 60;
 
     let dx = ballSpeed;
     let dy = -ballSpeed;
@@ -19,20 +19,19 @@ function play() {
     let paddleHeight = canvas.height / 30;
     let paddleWidth = canvas.width / 5;
     let paddleX = (canvas.width - paddleWidth) / 2;
-    let paddleSpeed = 15;
+    let paddleSpeed = ballSpeed;
 
     let isRightPressed = false;
     let isLeftPressed = false;
 
     let brickRowCount = 2;
     let brickColumnCount = 10;
-    let brickPadding = 50;
+    let brickPadding = canvas.width / 20;
     
     let brickWidth = canvas.width / brickColumnCount - brickPadding;
     let brickHeight = brickWidth / 2;
 
     let brickOffsetTop = 30;
-    let brickOffsetLeft = 30;
     let bricks = [];
 
     let isGameOver = false;
@@ -124,7 +123,7 @@ function play() {
             for (let r = 0; r < brickRowCount; r++) {
                 if (bricks[c][r].status == 1) {
 
-                    let brickX = (c * (brickWidth + brickPadding)) + brickOffsetLeft;
+                    let brickX = (c * (brickWidth + brickPadding)) + brickPadding / 2;
                     let brickY = (r * (brickHeight + brickPadding)) + brickOffsetTop;
                     bricks[c][r].x = brickX;
                     bricks[c][r].y = brickY;
@@ -146,7 +145,7 @@ function play() {
     }
 
     function drawScore() {
-        context.font = "2rem 'Luckiest Guy', cursive"
+        context.font = "5rem 'Luckiest Guy', cursive"
         context.fillStyle = "#000000";
         context.textAlign = "center";
         context.fillText("Score: " + score, (canvas.width / 2), canvas.height / 2);

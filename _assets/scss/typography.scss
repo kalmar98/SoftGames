@@ -1,29 +1,23 @@
 /* Typography */
 
 @import 'variables';
+@import 'mixins';
 
 html {
-	font-size: $defaultFontSize;
 	font-family: $defaultFontFamily;
 	letter-spacing: $defaultLetterSpacing;
 	color: $textMainColor;
 }
 
-@media (min-width: 600px) {
-	html { font-size: $tabletFontSize; }
-}
+@include respond-to('phone'){ html{font-size: $defaultFontSize;}	}
 
-@media (min-width: 1260px) {
-	html { font-size: $laptopFontSize;}
-}
+@include respond-to('tablet'){ html{font-size: $tabletFontSize;}	}
 
-@media (min-width: 1420px) {
-	html { font-size: $desktopFontSize; }
-}
+@include respond-to('laptop'){ html{font-size: $laptopFontSize;}	}
 
-@media (min-width: 1660px) {
-	html { font-size: $hugeFontSize; }
-}
+@include respond-to('desktop'){ html{font-size: $desktopFontSize;}	}
+
+
 
 
 p, ul, ol, dl, table {

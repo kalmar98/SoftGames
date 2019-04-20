@@ -168,7 +168,7 @@ function play() {
     }
 
     function drawScore() {
-        context.font = "2rem 'Luckiest Guy', cursive"
+        context.font = "5rem 'Luckiest Guy', cursive"
         context.fillStyle = "#000000";
         context.fillText("Score: " + score, 0, y * 2);
     }

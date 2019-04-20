@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 .contacts {
-  width: 50%;
-  margin: 2rem auto;
+  width: 70%;
+  margin: 1rem auto;
   text-align: center;
   border: 1rem double #c90000;
   border-radius: 1rem;
@@ -14,15 +14,18 @@
     border: 0.5rem double black; }
   .contacts p {
     margin: 1rem auto 1rem;
+    letter-spacing: 0.2rem;
     -webkit-animation: summon-shadow 0.1s 2s 2 both;
             animation: summon-shadow 0.1s 2s 2 both; }
 
 .media {
-  width: 20%;
-  margin: 2rem auto;
+  width: 50%;
+  margin: 5rem auto;
   text-align: center;
   -webkit-animation: appear 0.5s ease;
-          animation: appear 0.5s ease; }
+          animation: appear 0.5s ease;
+  display: grid;
+  grid-template-columns: 30% 40% 30%; }
   .media .fas, .media .fab {
     font-size: 5rem;
     -webkit-animation: summon-shadow 0.1s 1s 2 both;

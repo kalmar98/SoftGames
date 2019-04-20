@@ -8,14 +8,13 @@
 
 html{
 	height: 100%;
-
 	body {
-		margin: 0 8rem;
+		padding: 0;
 		min-height: 100%;
 		display: grid;
 		grid-template-rows: auto 1fr auto;
 		background: $bgMainColor;
-		padding: 0rem 3rem;
+		
 	
 		.content {
 			padding: 2rem 0;	
@@ -23,6 +22,54 @@ html{
 		
 	}
 }
+
+
+
+@include respond-to('tablet'){ 
+	body{
+		padding: 0rem 3rem !important;
+	}
+
+	.games{
+		width: 70% !important;
+	}
+}
+
+@include respond-to('laptop'){ 
+	body{
+		margin: 0 8rem !important;
+	}
+
+	.games{
+		width: 80% !important;
+	}
+
+	.contacts{
+		width: 50% !important;
+	}
+
+	.about{
+		width: 70% !important;
+		article {
+			grid-template-columns: 50% 50% !important;
+			grid-template-rows: 100% !important;
+
+			p{
+				padding: 0 !important;
+			}
+			
+		}
+	}
+
+}
+
+@include respond-to('desktop'){ 
+	.games{
+		width: 50% !important;
+	}
+}
+
+
 
 
 

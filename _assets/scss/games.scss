@@ -2,10 +2,10 @@
 
 .games {
     display: grid;
-    grid-template-rows: 4.7rem auto;
-    width: 70%;
+    grid-template-rows: 4.5rem auto;
+    width: 90%;
     height: 80%;
-    margin: 2rem auto;
+    margin: 1rem auto;
     text-align: center;
     border: 1rem double $sgRed;
     border-radius: 1rem;
@@ -34,7 +34,7 @@
         background: transparent;
         outline: none;
         font-family: inherit;
-        opacity: 0.2;
+        opacity: 0.4;
         color: $sgRed;
         font-size: 3rem;
 

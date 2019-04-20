@@ -1,8 +1,8 @@
 @import 'variables';
 
 .about {
-    width: 60%;
-    margin: 2rem auto;
+    width: 70%;
+    margin: 1rem auto;
     text-align: center;
     border: 1rem double $sgRed;
     border-radius: 1rem;
@@ -17,7 +17,8 @@
 
     article{
         display: grid;
-        grid-template-columns: 50% 50%;
+        
+        
         
 
         img{
@@ -27,10 +28,10 @@
         }   
     
         p{
-            width: 80%;
+            width: 85%;
             margin: auto auto;
             animation: summon-shadow 0.1s 2s 2 both;
-            
+            padding: 2rem;
             
         }
     }

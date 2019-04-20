@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 .about {
-  width: 60%;
-  margin: 2rem auto;
+  width: 70%;
+  margin: 1rem auto;
   text-align: center;
   border: 1rem double #c90000;
   border-radius: 1rem;
@@ -13,14 +13,14 @@
     font-size: 3rem;
     border: 0.5rem double black; }
   .about article {
-    display: grid;
-    grid-template-columns: 50% 50%; }
+    display: grid; }
     .about article img {
       width: 100%;
       height: auto;
       border: 0.5rem ridge #c90000; }
     .about article p {
-      width: 80%;
+      width: 85%;
       margin: auto auto;
       -webkit-animation: summon-shadow 0.1s 2s 2 both;
-              animation: summon-shadow 0.1s 2s 2 both; }
+              animation: summon-shadow 0.1s 2s 2 both;
+      padding: 2rem; }

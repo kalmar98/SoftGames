@@ -17,7 +17,7 @@ function animate() {
         if (progress < 1) {
             animate()
            }
-    }, (textToWrite.length - i) / 100 );
+    }, 1000 / textToWrite.length );
 }
 
 function getRandomChars(howMany) {

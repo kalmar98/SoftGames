@@ -1,8 +1,8 @@
 @import 'variables';
 
 .contacts {
-    width: 50%;
-    margin: 2rem auto;
+    width: 70%;
+    margin: 1rem auto;
     text-align: center;
     border: 1rem double $sgRed;
     border-radius: 1rem;
@@ -17,6 +17,7 @@
 
     p{
         margin: 1rem auto 1rem;
+        letter-spacing: 0.2rem;
         animation: summon-shadow 0.1s 2s 2 both;
     }
 
@@ -25,15 +26,18 @@
 }
 
 .media{
-    width: 20%;
-    margin: 2rem auto;
+    width: 50%;
+    margin: 5rem auto;
     text-align: center;
     animation: $appearAnim;
-    
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+
 
     .fas, .fab{
         font-size: 5rem;
         animation: summon-shadow 0.1s 1s 2 both;
+        
 
         &:hover, &:hover{
             animation: blur 0.1s ease-in infinite alternate;
