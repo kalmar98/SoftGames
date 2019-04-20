@@ -2,7 +2,9 @@ title: SoftGames
 email: kalmar98softuni@gmail.com
 description: School Project
 destination: docs
+# baseurl: ""
 baseurl: "/SoftGames"
+
 url: "https://kalmar98.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md]
 
