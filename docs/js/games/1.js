@@ -56,12 +56,12 @@ function play() {
         const firstTouch = getTouches(e)[0];
         xDown = firstTouch.clientX;
         yDown = firstTouch.clientY;
+        isLeftPressed = false;
+        isRightPressed = false;
     };
 
     function handleTouchMove(e) {
         if (!xDown || !yDown) {
-            isLeftPressed = false;
-            isRightPressed = false;
             return;
         }
 
