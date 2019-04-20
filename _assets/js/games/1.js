@@ -11,7 +11,7 @@ function play() {
     let y = canvas.height / 2 + canvas.height / 5;
 
     let ballRadius = 15;
-    let ballSpeed = canvas.height / 70;
+    let ballSpeed = 50;
 
     let dx = ballSpeed;
     let dy = -ballSpeed;
